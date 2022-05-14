@@ -1,5 +1,7 @@
 package exercises;
 
+import java.util.concurrent.Callable;
+
 public class Cat {
 
 	private String name;
@@ -10,7 +12,7 @@ public class Cat {
 	}
 
 	void meow() {
-		System.out.println("meeeeeooooooooooowwwwwwwww!!");
+		System.out.println(this.name +" "+ "is makoing sound meeeeeooooooooooowwwwwwwww!!");
 	}
 
 	public void printName() {
@@ -34,10 +36,25 @@ public class Cat {
 		/* Do the following things without changing the Cat class */
 
 		// 1. Make the Cat meow
-		
+		Cat catOne = new Cat("Lily");
+		Cat catTwo = new Cat(null );
+		Cat catThree = new Cat("Bella");
+		catOne.meow();
+		catThree.meow();
 		// 2. Get the Cat to print it's name
+		catOne.printName();
+		catTwo.printName();
 
 		// 3. Kill the Cat!
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
+		catOne.kill();
 
 	}
 }
